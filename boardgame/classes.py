@@ -31,7 +31,13 @@ class Game():
             DriverPlayer(self), 
             DriverPlayer(self), 
         ]
+        self.currentPlayer = None
         self.target_card = None
+
+    def get_next_player(self) -> Player:
+        player_index = self.players.index(self.currentPlayer)
+        return self.players[(player_index + 1) % len(self.players)]
+
         
     def prepare_game(self): 
         # Prepare card stacks
@@ -40,18 +46,60 @@ class Game():
         # Damage nodes 
         self.damage_nodes() 
         # Choose target card at random and make deep copy to avoid errors
-        target_card = Game.targetCards[random.randint(0, len(Game.targetCards))]
+        target_card = Game.targetCards[random.randint(0, len(Game.targetCards)-1)]
         self.target_card = TargetCard(target_card.start_index, target_card.destination_index, target_card.amount)
         # Position 2 freight units at start node 
         self.board.get_node_by_index(self.target_card.start_index).freight = 2
         # Distribute player funds
         self.set_player_funds()
+        # Set first Industry Player to begin
+        self.currentPlayer = self.players[0]
         # Game is prepared 
         self.isPrepared = True 
 
 
     def iterate(self): 
-        pass
+        while not self.isWon and not self.isLost:
+            for currentPlayer in self.players:
+                # 1 action phase
+                while currentPlayer.actions_left > 0:
+                    # perform action placeholder
+                    user_input = input(f"Player {self.players.index(currentPlayer)} has {currentPlayer.actions_left} actions left. Press any key.")
+                    currentPlayer.actions_left = currentPlayer.actions_left - 1
+                # 2 resupply phase 
+                for i in range(0,2): 
+                    if self.board.draw_player_card() is 1:
+                        currentPlayer.funds += 1
+                    else: 
+                        # 2.1 destruction quota up 
+                        self.board.destruction_level = self.board.destruction_level + 1
+                        # 2.2 unexpected string damage
+                        damage_card = self.board.draw_damage_card('bottom')
+                        if damage_card is not 0:
+                            current_node = self.board.get_node_by_index(damage_card)
+                            current_node.add_damage(3)
+                        # 2.3 increase intensity
+                        random.shuffle(self.board.damage_cards_discards) 
+                        self.board.damage_cards += self.board.damage_cards_discards
+                        self.board.damage_cards_discards = [] 
+                # discard cards if more than 7 in the hand
+                currentPlayer.funds = 7 if currentPlayer.funds > 7 else currentPlayer.funds 
+                # 3 damage phase
+                destruction_level_to_card_draw_mapping = {0:1, 1:1, 2:2, 3:2, 4:3}
+                for i in range(0, destruction_level_to_card_draw_mapping[self.board.destruction_level]):
+                    try:
+                        damage_card = self.board.draw_damage_card() 
+                        if damage_card is not 0:
+                            current_node = self.board.get_node_by_index(damage_card)
+                            current_node.add_damage(1)
+                    except IndexError: 
+                        # no damage cards left special case 
+                        # TODO program edge case behavior
+                        pass
+
+                
+
+
 
     def create_and_shuffle_damage_cards(self) -> list[int]:
         """Emulate a shuffled standard deck of 1 to 21 with two jokers (=0) and only one color
@@ -116,24 +164,60 @@ class Board():
            data = json.load(f)
         result = [] 
         for entry in data: 
-            result.append(Node(**entry))
+            result.append(Node(**entry, board=self))
         return result
     
     def get_node_by_index(self, game_index:int) -> Node:
         return self.nodes[game_index - 1]
 
+    def draw_player_card(self, draw_from:str ='top') -> int: 
+        if draw_from not in ['top', 'bottom']:
+            raise ValueError("from parameter must be 'top' or 'bottom'.")     
+        if draw_from is "top":
+            card = self.player_cards.pop()
+        else:
+            card = self.player_cards.pop(0)
+        self.player_cards_discards.append(card)
+        return card
 
+    def draw_damage_card(self, draw_from:str ='top') -> int:
+        if draw_from not in ['top', 'bottom']:
+            raise ValueError("from parameter must be 'top' or 'bottom'.")     
+        if draw_from is "top":
+            card = self.damage_cards.pop()
+        else:
+            card = self.player_cards.pop(0)
+        self.damage_cards_discards.append(card)
+        return card
 
 
 class Node(): 
-    def __init__(self, index:int, name:str = "", node_type:str = "green", neighbors:list[int] = []) -> None: 
+    def __init__(self, index:int, name:str, node_type:str, neighbors:list[int], board:Board) -> None: 
         self.index = index
         self.name = name
         self.node_type = node_type
         self.neighbors = neighbors
         self.damage = 0 
         self.freight = 0
+        self.affected_by_cascade = False
+        self.board = board
+    
+    def add_damage(self, damage_value:int) -> None: 
+        self.damage += damage_value
+        if self.damage > 3:
+            self.damage = 3
+            self.cascade_node()
+    
+    def cascade_node(self) -> None:
+        self.affected_by_cascade = True
+        self.board.cascade_level += 1
+        for node_index in self.neighbors:
+            neighbor_node = self.board.get_node_by_index(node_index) 
+            if not neighbor_node.affected_by_cascade:
+                neighbor_node.add_damage(1)
+        self.affected_by_cascade = False
 
+        
 
     
 
@@ -233,6 +317,12 @@ class InvestorPlayer(Player):
             raise InvalidActionException(self) 
         self.funds = self.funds -1 
         otherPlayer.funds = otherPlayer.funds + 1
+    
+    def make_longtime_investment(self): 
+        pass
+
+    def coordinate_drivers(self): 
+        pass 
 
 class InvalidActionException(Exception):
     def __init__(self, player:Player, message:str=""):
@@ -240,3 +330,6 @@ class InvalidActionException(Exception):
         self.message = message 
 
 
+g = Game()
+g.prepare_game()
+g.iterate()
