@@ -218,6 +218,12 @@ class Node():
         self.affected_by_cascade = False
 
         
+class PlayerAction(): 
+    """Wrapper Class that holds a player action in form of a method reference and arbitrary parameters
+    """
+    def __init__(self, method:function, parameters:object):
+        self.method = method
+        self.parameters = parameters       
 
     
 
@@ -254,8 +260,34 @@ class Player():
         if destination_index not in valid_destination_indices:
             raise InvalidActionException(self)
         self.location_index = destination_index
-        
 
+    def get_valid_actions(self) -> list[PlayerAction]:
+        current_node = self.game.board.get_node_by_index(self.location_index)
+        valid_actions = []
+
+        # check for valid run destinations 
+        neighbor_nodes = self.game.board.get_node_by_index(self.location_index).neighbors
+        for neighbor_node in neighbor_nodes:
+            valid_actions.append(PlayerAction(self.run, neighbor_node))
+        
+        # check for valid fly destinations 
+        orange_nodes = [node.index for node in self.game.board.nodes if node.node_type in ['orange']]
+        if current_node.index in orange_nodes:
+            orange_nodes.remove(current_node.index)
+        if self.funds >= 2: 
+            for orange_node in orange_nodes:
+                valid_actions.append(PlayerAction(self.fly, orange_node))
+
+        # check for valud special flight destinations 
+        purple_nodes = [node.index for node in self.game.board.nodes if node.node_type in ['purple']]
+        if current_node.index in purple_nodes:
+            purple_nodes.remove(current_node.index)
+        for purple_node in purple_nodes:
+            valid_actions.append(PlayerAction(self.special_flight, purple_node))
+
+        return valid_actions   
+        
+        
 class DriverPlayer(Player):
     def share_resources(self, otherPlayer:Player) -> None:
         if self.funds < 1: 
@@ -274,6 +306,20 @@ class DriverPlayer(Player):
             raise InvalidActionException(self) 
         self.funds = self.funds - 1
         current_node.damage = current_node.damage - 1
+    
+    def get_valid_actions(self) -> list[PlayerAction]:
+        valid_actions = super(DriverPlayer, self).get_valid_actions()
+        current_node = self.game.board.get_node_by_index(self.location_index)
+        # share resources
+        if self.funds >= 1:
+            reachable_players = [player for player in self.game.players if player.location_index is self.location_index]
+            reachable_players.remove(self)
+            for player in reachable_players:
+               valid_actions.append(PlayerAction(self.share_resources, player))
+        #repair
+        if self.funds >= 1 and current_node.damage > 0:
+            valid_actions.append(PlayerAction(self.repair))
+        return valid_actions
             
 
 
@@ -308,6 +354,18 @@ class IndustryPlayer(Player):
         destination_node.freight = destination_node.freight  + 1
         self.run(destination_index)
 
+    def get_valid_actions(self) -> list[PlayerAction]:
+        valid_actions = super(DriverPlayer, self).get_valid_actions()
+        current_node = self.game.board.get_node_by_index(self.location_index) 
+        # generate goods
+        if self.funds >= 2 and current_node.freight <3:
+            valid_actions.append(PlayerAction(self.generate_goods))
+        # transport goods 
+        if current_node.freight > 0 and ( current_node.damage < 2 or (current_node.damage == 2 and self.actions_left >= 2)):
+            # set valid destinations for transport as the same that are valid for "run"
+            valid_destinations = [action.parameters for action in valid_actions if action.method == self.run]
+            for valid_destination in valid_destinations:
+                valid_actions.append(PlayerAction(self.transport_goods, valid_destination))
 
 class InvestorPlayer(Player): 
     def share_resources(self, otherPlayer:Player) -> None:
@@ -324,12 +382,24 @@ class InvestorPlayer(Player):
     def coordinate_drivers(self): 
         pass 
 
+    def get_valid_actions(self) -> list[PlayerAction]:
+        valid_actions = super(DriverPlayer, self).get_valid_actions()
+        current_node = self.game.board.get_node_by_index(self.location_index)
+        # share resources
+        if self.funds >= 1:
+            reachable_players = [player for player in self.game.players if player.location_index is self.location_index]
+            reachable_players.remove(self)
+            for player in reachable_players:
+               valid_actions.append(PlayerAction(self.share_resources, player))
+        # TODO implement missing methods
+        return valid_actions
+
 class InvalidActionException(Exception):
     def __init__(self, player:Player, message:str=""):
         self.player = player
         self.message = message 
 
 
-g = Game()
-g.prepare_game()
-g.iterate()
+#g = Game()
+#g.prepare_game()
+#g.iterate()
