@@ -3,12 +3,25 @@ from __future__ import annotations
 import json
 import random
 import math
+import logging
+
+# TODO implement better logging
+import logging
+try:
+    logging.basicConfig(filename='game.log', encoding='utf-8', level=logging.DEBUG)
+except ValueError:
+    # produces a value error that does not seem to have any effect, so ignoring it. Possible a bug in python version 3.7.x
+    pass
+
 
 class TargetCard(): 
     def __init__(self, start_index:int, destination_index:int, amount:int) -> None:
         self.start_index = start_index
         self.destination_index = destination_index
         self.amount = amount
+    
+    def __str__(self): 
+        return f"Transport {self.amount} freight units from node {self.start_index} to node {self.destination_index}."
         
 class Game(): 
 
@@ -24,12 +37,12 @@ class Game():
         self.isLost = False 
         self.isPrepared = False
         self.turn = 0
-        self.board = Board()
+        self.board = Board(self)
         self.players =[
-            IndustryPlayer(self), 
-            InvestorPlayer(self), 
-            DriverPlayer(self), 
-            DriverPlayer(self), 
+            IndustryPlayer("Industry", self), 
+            InvestorPlayer("Investor", self), 
+            DriverPlayer("Driver 1", self), 
+            DriverPlayer("Driver 2", self), 
         ]
         self.currentPlayer = None
         self.target_card = None
@@ -37,7 +50,9 @@ class Game():
     def get_next_player(self) -> Player:
         player_index = self.players.index(self.currentPlayer)
         return self.players[(player_index + 1) % len(self.players)]
-
+    
+    def check_if_game_is_won(self) -> None:
+        self.isWon = self.board.get_node_by_index(self.target_card.destination_index).freight == self.target_card.amount
         
     def prepare_game(self): 
         # Prepare card stacks
@@ -56,47 +71,77 @@ class Game():
         self.currentPlayer = self.players[0]
         # Game is prepared 
         self.isPrepared = True 
+        logging.info("Game ready to start. Target card is " + str(self.target_card))
 
 
     def iterate(self): 
-        while not self.isWon and not self.isLost:
-            for currentPlayer in self.players:
-                # 1 action phase
-                while currentPlayer.actions_left > 0:
-                    # perform action placeholder
-                    user_input = input(f"Player {self.players.index(currentPlayer)} has {currentPlayer.actions_left} actions left. Press any key.")
-                    currentPlayer.actions_left = currentPlayer.actions_left - 1
-                # 2 resupply phase 
-                for i in range(0,2): 
-                    if self.board.draw_player_card() is 1:
-                        currentPlayer.funds += 1
-                    else: 
-                        # 2.1 destruction quota up 
-                        self.board.destruction_level = self.board.destruction_level + 1
-                        # 2.2 unexpected string damage
-                        damage_card = self.board.draw_damage_card('bottom')
-                        if damage_card is not 0:
-                            current_node = self.board.get_node_by_index(damage_card)
-                            current_node.add_damage(3)
-                        # 2.3 increase intensity
-                        random.shuffle(self.board.damage_cards_discards) 
-                        self.board.damage_cards += self.board.damage_cards_discards
-                        self.board.damage_cards_discards = [] 
-                # discard cards if more than 7 in the hand
-                currentPlayer.funds = 7 if currentPlayer.funds > 7 else currentPlayer.funds 
-                # 3 damage phase
-                destruction_level_to_card_draw_mapping = {0:1, 1:1, 2:2, 3:2, 4:3}
-                for i in range(0, destruction_level_to_card_draw_mapping[self.board.destruction_level]):
-                    try:
-                        damage_card = self.board.draw_damage_card() 
-                        if damage_card is not 0:
-                            current_node = self.board.get_node_by_index(damage_card)
-                            current_node.add_damage(1)
-                    except IndexError: 
-                        # no damage cards left special case 
-                        # TODO program edge case behavior
-                        pass
-
+        while True:
+            try: 
+                for currentPlayer in self.players:
+                    logging.info(f"{currentPlayer.name} action phase:")
+                    # 1 action phase
+                    while currentPlayer.actions_left > 0:
+                        # perform action placeholder
+                        #user_input = input(f"Player {self.players.index(currentPlayer)} has {currentPlayer.actions_left} actions left. Press any key.")
+                        valid_actions = currentPlayer.get_valid_actions() 
+                        rand_int = random.randint(0,len(valid_actions)-1)
+                        action = valid_actions[rand_int]
+                        if action.parameters:
+                            action.method(action.parameters)
+                        else:
+                            action.method()
+                        currentPlayer.actions_left = currentPlayer.actions_left - 1
+                        logging.info(f"Action {currentPlayer.name}: {action.method.__name__} ({action.parameters}). Action left: {currentPlayer.actions_left}")
+                    # 2 resupply phase 
+                    for i in range(0,2): 
+                        logging.info(f"{currentPlayer.name} resupply phase")
+                        if self.board.draw_player_card() is 1:
+                            currentPlayer.funds += 1
+                            logging.info(f"{currentPlayer.name} draws one fund card (now has {currentPlayer.funds}).")
+                        else: 
+                            # 2.1 destruction quota up 
+                            self.board.destruction_level = self.board.destruction_level + 1
+                            # 2.2 unexpected string damage
+                            logging.info(f"{currentPlayer.name} draws one destruction card. Destruction increased to {self.board.destruction_level}.")
+                            damage_card = self.board.draw_damage_card('bottom')
+                            if damage_card is not 0:
+                                current_node = self.board.get_node_by_index(damage_card)
+                                current_node.add_damage(3)
+                            # 2.3 increase intensity
+                            random.shuffle(self.board.damage_cards_discards) 
+                            self.board.damage_cards += self.board.damage_cards_discards
+                            self.board.damage_cards_discards = [] 
+                            logging.info(f"Shuffled the damage cards discard stack und put it on top of the damage stack.")
+                    # discard cards if more than 7 in the hand
+                    if currentPlayer.funds > 7: 
+                        logging.info(f"{currentPlayer.name} has too many cards on his hand and discards {currentPlayer.funds - 7} card(s).")
+                        currentPlayer.funds = 7
+                    # 3 damage phase
+                    logging.info(f"{currentPlayer.name} damage phase")
+                    destruction_level_to_card_draw_mapping = {0:1, 1:1, 2:2, 3:2, 4:3}
+                    card_draw_due_to_descruction = destruction_level_to_card_draw_mapping[self.board.destruction_level]
+                    logging.info(f"Draw {card_draw_due_to_descruction} damage cards due to destruction level {self.board.destruction_level}")
+                    for i in range(0, card_draw_due_to_descruction):
+                        try:
+                            
+                            damage_card = self.board.draw_damage_card() 
+                            if damage_card is not 0:
+                                current_node = self.board.get_node_by_index(damage_card)
+                                current_node.add_damage(1)
+                        except IndexError: 
+                            # no damage cards left special case 
+                            # TODO program edge case behavior
+                            pass
+                    # reset action points
+                    currentPlayer.actions_left = 4
+            except GameWonException as e:
+                # if at any point the game is won or lost the while loop is broken 
+                logging.info(e.message)
+                break
+            except GameLostException as e: 
+                logging.info("GAME LOST. Reason " + e.reason)
+                break 
+     
                 
 
 
@@ -142,7 +187,8 @@ class Game():
     
 
 class Board():   
-    def __init__(self) -> None: 
+    def __init__(self, game:Game) -> None: 
+        self.game = game
         self.cascade_level = 0
         self.destruction_level = 0 
         self.damage_cards = []
@@ -172,12 +218,15 @@ class Board():
 
     def draw_player_card(self, draw_from:str ='top') -> int: 
         if draw_from not in ['top', 'bottom']:
-            raise ValueError("from parameter must be 'top' or 'bottom'.")     
+            raise ValueError("from parameter must be 'top' or 'bottom'.") 
+        if len(self.player_cards) == 0:
+            raise GameLostException("No player cards left.")
         if draw_from is "top":
             card = self.player_cards.pop()
         else:
             card = self.player_cards.pop(0)
         self.player_cards_discards.append(card)
+        logging.info(f"Draw player card from {draw_from}: {card}.")
         return card
 
     def draw_damage_card(self, draw_from:str ='top') -> int:
@@ -188,6 +237,7 @@ class Board():
         else:
             card = self.player_cards.pop(0)
         self.damage_cards_discards.append(card)
+        logging.info(f"Draw damage card from {draw_from}: {card}.")
         return card
 
 
@@ -204,6 +254,7 @@ class Node():
     
     def add_damage(self, damage_value:int) -> None: 
         self.damage += damage_value
+        logging.info(f"Add {damage_value} to node {self.index} (now has {self.damage}).")
         if self.damage > 3:
             self.damage = 3
             self.cascade_node()
@@ -211,17 +262,21 @@ class Node():
     def cascade_node(self) -> None:
         self.affected_by_cascade = True
         self.board.cascade_level += 1
+        logging.info(f"Node {self.index} is affected by a cascade. Cascade level now is {self.board.cascade_level}")
+        if self.board.cascade_level >= 6:
+            raise GameLostException(f"Cascade level is {self.board.cascade_level}, but is only allowed to be max. 5.")  
         for node_index in self.neighbors:
             neighbor_node = self.board.get_node_by_index(node_index) 
             if not neighbor_node.affected_by_cascade:
                 neighbor_node.add_damage(1)
         self.affected_by_cascade = False
+        
 
         
 class PlayerAction(): 
     """Wrapper Class that holds a player action in form of a method reference and arbitrary parameters
     """
-    def __init__(self, method:function, parameters:object):
+    def __init__(self, method:function, parameters:object=None):
         self.method = method
         self.parameters = parameters       
 
@@ -231,7 +286,8 @@ class PlayerAction():
 #TODO implement base class as abstract base class https://www.python-course.eu/python3_abstract_classes.php 
 class Player(): 
     
-    def __init__(self, game:Game, location_index:int=1, funds:int=0) -> None:
+    def __init__(self, name:str, game:Game, location_index:int=1, funds:int=0) -> None:
+        self.name = name
         self.game = game
         self.location_index = location_index
         self.funds = funds
@@ -242,6 +298,7 @@ class Player():
         if destination_index not in current_node.neighbors:
             raise InvalidActionException(self)
         self.location_index = destination_index 
+       
         
     
     def fly(self, destination_index:int) -> None: 
@@ -355,7 +412,7 @@ class IndustryPlayer(Player):
         self.run(destination_index)
 
     def get_valid_actions(self) -> list[PlayerAction]:
-        valid_actions = super(DriverPlayer, self).get_valid_actions()
+        valid_actions = super(IndustryPlayer, self).get_valid_actions()
         current_node = self.game.board.get_node_by_index(self.location_index) 
         # generate goods
         if self.funds >= 2 and current_node.freight <3:
@@ -366,6 +423,8 @@ class IndustryPlayer(Player):
             valid_destinations = [action.parameters for action in valid_actions if action.method == self.run]
             for valid_destination in valid_destinations:
                 valid_actions.append(PlayerAction(self.transport_goods, valid_destination))
+        
+        return valid_actions
 
 class InvestorPlayer(Player): 
     def share_resources(self, otherPlayer:Player) -> None:
@@ -383,7 +442,7 @@ class InvestorPlayer(Player):
         pass 
 
     def get_valid_actions(self) -> list[PlayerAction]:
-        valid_actions = super(DriverPlayer, self).get_valid_actions()
+        valid_actions = super(InvestorPlayer, self).get_valid_actions()
         current_node = self.game.board.get_node_by_index(self.location_index)
         # share resources
         if self.funds >= 1:
@@ -399,7 +458,16 @@ class InvalidActionException(Exception):
         self.player = player
         self.message = message 
 
+class GameLostException(Exception):
+    def __init__(self, reason):
+        self.reason = reason
 
-#g = Game()
-#g.prepare_game()
-#g.iterate()
+class GameWonException(Exception): 
+    def __init__(self, message = "GAME WON"):
+        self.message = message
+
+
+
+g = Game()
+g.prepare_game()
+g.iterate()
