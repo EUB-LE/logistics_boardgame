@@ -468,6 +468,6 @@ class GameWonException(Exception):
 
 
 
-g = Game()
-g.prepare_game()
-g.iterate()
+#g = Game()
+#g.prepare_game()
+#g.iterate()
