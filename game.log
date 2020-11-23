@@ -1,255 +1,1007 @@
-INFO:root:Game ready to start. Target card is Transport 3 freight units from node 19 to node 21.
-INFO:root:Industry action phase:
-INFO:root:Action Industry: fly (10). Action left: 3
-INFO:root:Action Industry: special_flight (20). Action left: 2
-INFO:root:Action Industry: run (10). Action left: 1
-INFO:root:Action Industry: special_flight (21). Action left: 0
-INFO:root:Industry resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Industry draws one fund card (now has 1).
-INFO:root:Industry resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Industry draws one fund card (now has 2).
-INFO:root:Industry damage phase
-INFO:root:Draw 1 damage cards due to destruction level 0
-INFO:root:Draw damage card from top: 4.
-INFO:root:Add 1 to node 4 (now has 1).
-INFO:root:Investor action phase:
-INFO:root:Action Investor: special_flight (21). Action left: 3
-INFO:root:Action Investor: fly (12). Action left: 2
-INFO:root:Action Investor: special_flight (19). Action left: 1
-INFO:root:Action Investor: special_flight (20). Action left: 0
-INFO:root:Investor resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Investor draws one fund card (now has 1).
-INFO:root:Investor resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Investor draws one fund card (now has 2).
-INFO:root:Investor damage phase
-INFO:root:Draw 1 damage cards due to destruction level 0
-INFO:root:Draw damage card from top: 17.
-INFO:root:Add 1 to node 17 (now has 1).
-INFO:root:Driver 1 action phase:
-INFO:root:Action Driver 1: fly (12). Action left: 3
-INFO:root:Action Driver 1: run (13). Action left: 2
-INFO:root:Action Driver 1: special_flight (21). Action left: 1
-INFO:root:Action Driver 1: special_flight (19). Action left: 0
-INFO:root:Driver 1 resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Driver 1 draws one fund card (now has 1).
-INFO:root:Driver 1 resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Driver 1 draws one fund card (now has 2).
-INFO:root:Driver 1 damage phase
-INFO:root:Draw 1 damage cards due to destruction level 0
-INFO:root:Draw damage card from top: 0.
-INFO:root:Driver 2 action phase:
-INFO:root:Action Driver 2: fly (10). Action left: 3
-INFO:root:Action Driver 2: run (11). Action left: 2
-INFO:root:Action Driver 2: run (20). Action left: 1
-INFO:root:Action Driver 2: special_flight (21). Action left: 0
-INFO:root:Driver 2 resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Driver 2 draws one fund card (now has 1).
-INFO:root:Driver 2 resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Driver 2 draws one fund card (now has 2).
-INFO:root:Driver 2 damage phase
-INFO:root:Draw 1 damage cards due to destruction level 0
-INFO:root:Draw damage card from top: 0.
-INFO:root:Industry action phase:
-INFO:root:Action Industry: generate_goods (None). Action left: 3
-INFO:root:Action Industry: special_flight (20). Action left: 2
-INFO:root:Action Industry: special_flight (19). Action left: 1
-INFO:root:Action Industry: run (5). Action left: 0
-INFO:root:Industry resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Industry draws one fund card (now has 1).
-INFO:root:Industry resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Industry draws one fund card (now has 2).
-INFO:root:Industry damage phase
-INFO:root:Draw 1 damage cards due to destruction level 0
-INFO:root:Draw damage card from top: 1.
-INFO:root:Add 1 to node 1 (now has 1).
-INFO:root:Investor action phase:
-INFO:root:Action Investor: fly (10). Action left: 3
-INFO:root:Action Investor: special_flight (19). Action left: 2
-INFO:root:Action Investor: special_flight (20). Action left: 1
-INFO:root:Action Investor: run (10). Action left: 0
-INFO:root:Investor resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Investor draws one fund card (now has 1).
-INFO:root:Investor resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Investor draws one fund card (now has 2).
-INFO:root:Investor damage phase
-INFO:root:Draw 1 damage cards due to destruction level 0
-INFO:root:Draw damage card from top: 6.
-INFO:root:Add 1 to node 6 (now has 1).
-INFO:root:Driver 1 action phase:
-INFO:root:Action Driver 1: fly (10). Action left: 3
-INFO:root:Action Driver 1: special_flight (20). Action left: 2
-INFO:root:Action Driver 1: special_flight (19). Action left: 1
-INFO:root:Action Driver 1: special_flight (20). Action left: 0
-INFO:root:Driver 1 resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Driver 1 draws one fund card (now has 1).
-INFO:root:Driver 1 resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Driver 1 draws one fund card (now has 2).
-INFO:root:Driver 1 damage phase
-INFO:root:Draw 1 damage cards due to destruction level 0
-INFO:root:Draw damage card from top: 15.
-INFO:root:Add 1 to node 15 (now has 1).
-INFO:root:Driver 2 action phase:
-INFO:root:Action Driver 2: fly (1). Action left: 3
-INFO:root:Action Driver 2: special_flight (19). Action left: 2
-INFO:root:Action Driver 2: special_flight (20). Action left: 1
-INFO:root:Action Driver 2: special_flight (21). Action left: 0
-INFO:root:Driver 2 resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Driver 2 draws one fund card (now has 1).
-INFO:root:Driver 2 resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Driver 2 draws one fund card (now has 2).
-INFO:root:Driver 2 damage phase
-INFO:root:Draw 1 damage cards due to destruction level 0
-INFO:root:Draw damage card from top: 14.
-INFO:root:Add 1 to node 14 (now has 1).
-INFO:root:Industry action phase:
-INFO:root:Action Industry: special_flight (19). Action left: 3
-INFO:root:Action Industry: run (4). Action left: 2
-INFO:root:Action Industry: generate_goods (None). Action left: 1
-INFO:root:Action Industry: transport_goods (3). Action left: -1
-INFO:root:Industry resupply phase
-INFO:root:Draw player card from top: 0.
-INFO:root:Industry draws one destruction card. Destruction increased to 1.
-INFO:root:Draw damage card from bottom: 1.
-INFO:root:Add 3 to node 1 (now has 4).
-INFO:root:Node 1 is affected by a cascade. Cascade level now is 1
-INFO:root:Add 1 to node 2 (now has 1).
-INFO:root:Shuffled the damage cards discard stack und put it on top of the damage stack.
-INFO:root:Industry resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Industry draws one fund card (now has 1).
-INFO:root:Industry damage phase
-INFO:root:Draw 1 damage cards due to destruction level 1
-INFO:root:Draw damage card from top: 0.
-INFO:root:Investor action phase:
-INFO:root:Action Investor: fly (9). Action left: 3
-INFO:root:Action Investor: run (7). Action left: 2
-INFO:root:Action Investor: special_flight (21). Action left: 1
-INFO:root:Action Investor: special_flight (20). Action left: 0
-INFO:root:Investor resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Investor draws one fund card (now has 1).
-INFO:root:Investor resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Investor draws one fund card (now has 2).
-INFO:root:Investor damage phase
-INFO:root:Draw 1 damage cards due to destruction level 1
-INFO:root:Draw damage card from top: 1.
-INFO:root:Add 1 to node 1 (now has 4).
-INFO:root:Node 1 is affected by a cascade. Cascade level now is 2
-INFO:root:Add 1 to node 2 (now has 2).
-INFO:root:Driver 1 action phase:
-INFO:root:Action Driver 1: share_resources (<__main__.InvestorPlayer object at 0x7fcf9098df90>). Action left: 3
-INFO:root:Action Driver 1: run (10). Action left: 2
-INFO:root:Action Driver 1: run (11). Action left: 1
-INFO:root:Action Driver 1: special_flight (21). Action left: 0
-INFO:root:Driver 1 resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Driver 1 draws one fund card (now has 2).
-INFO:root:Driver 1 resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Driver 1 draws one fund card (now has 3).
-INFO:root:Driver 1 damage phase
-INFO:root:Draw 1 damage cards due to destruction level 1
-INFO:root:Draw damage card from top: 4.
-INFO:root:Add 1 to node 4 (now has 2).
-INFO:root:Driver 2 action phase:
-INFO:root:Action Driver 2: special_flight (20). Action left: 3
-INFO:root:Action Driver 2: special_flight (19). Action left: 2
-INFO:root:Action Driver 2: run (5). Action left: 1
-INFO:root:Action Driver 2: special_flight (20). Action left: 0
-INFO:root:Driver 2 resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Driver 2 draws one fund card (now has 3).
-INFO:root:Driver 2 resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Driver 2 draws one fund card (now has 4).
-INFO:root:Driver 2 damage phase
-INFO:root:Draw 1 damage cards due to destruction level 1
-INFO:root:Draw damage card from top: 11.
-INFO:root:Add 1 to node 11 (now has 1).
-INFO:root:Industry action phase:
-INFO:root:Action Industry: transport_goods (4). Action left: 2
-INFO:root:Action Industry: run (3). Action left: 1
-INFO:root:Action Industry: special_flight (19). Action left: 0
-INFO:root:Industry resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Industry draws one fund card (now has 2).
-INFO:root:Industry resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Industry draws one fund card (now has 3).
-INFO:root:Industry damage phase
-INFO:root:Draw 1 damage cards due to destruction level 1
-INFO:root:Draw damage card from top: 14.
-INFO:root:Add 1 to node 14 (now has 2).
-INFO:root:Investor action phase:
-INFO:root:Action Investor: run (10). Action left: 3
-INFO:root:Action Investor: special_flight (19). Action left: 2
-INFO:root:Action Investor: fly (9). Action left: 1
-INFO:root:Action Investor: run (17). Action left: 0
-INFO:root:Investor resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Investor draws one fund card (now has 2).
-INFO:root:Investor resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Investor draws one fund card (now has 3).
-INFO:root:Investor damage phase
-INFO:root:Draw 1 damage cards due to destruction level 1
-INFO:root:Draw damage card from top: 1.
-INFO:root:Add 1 to node 1 (now has 4).
-INFO:root:Node 1 is affected by a cascade. Cascade level now is 3
-INFO:root:Add 1 to node 2 (now has 3).
-INFO:root:Driver 1 action phase:
-INFO:root:Action Driver 1: fly (12). Action left: 3
-INFO:root:Action Driver 1: special_flight (20). Action left: 2
-INFO:root:Action Driver 1: run (11). Action left: 1
-INFO:root:Action Driver 1: special_flight (21). Action left: 0
-INFO:root:Driver 1 resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Driver 1 draws one fund card (now has 2).
-INFO:root:Driver 1 resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Driver 1 draws one fund card (now has 3).
-INFO:root:Driver 1 damage phase
-INFO:root:Draw 1 damage cards due to destruction level 1
-INFO:root:Draw damage card from top: 15.
-INFO:root:Add 1 to node 15 (now has 2).
-INFO:root:Driver 2 action phase:
-INFO:root:Action Driver 2: fly (12). Action left: 3
-INFO:root:Action Driver 2: fly (10). Action left: 2
-INFO:root:Action Driver 2: run (11). Action left: 1
-INFO:root:Action Driver 2: run (20). Action left: 0
-INFO:root:Driver 2 resupply phase
-INFO:root:Draw player card from top: 1.
-INFO:root:Driver 2 draws one fund card (now has 1).
-INFO:root:Driver 2 resupply phase
-INFO:root:Draw player card from top: 0.
-INFO:root:Driver 2 draws one destruction card. Destruction increased to 2.
-INFO:root:Draw damage card from bottom: 1.
-INFO:root:Add 3 to node 1 (now has 6).
-INFO:root:Node 1 is affected by a cascade. Cascade level now is 4
-INFO:root:Add 1 to node 2 (now has 4).
-INFO:root:Node 2 is affected by a cascade. Cascade level now is 5
-INFO:root:Add 1 to node 3 (now has 1).
-INFO:root:Shuffled the damage cards discard stack und put it on top of the damage stack.
-INFO:root:Driver 2 damage phase
-INFO:root:Draw 2 damage cards due to destruction level 2
-INFO:root:Draw damage card from top: 1.
-INFO:root:Add 1 to node 1 (now has 4).
-INFO:root:Node 1 is affected by a cascade. Cascade level now is 6
-INFO:root:GAME LOST. Reason Cascade level is 6, but is only allowed to be max. 5.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 19, 'funds': 2, 'actions_left': 4}
+INFO:root:INDUSTRY (ID: 0) do_player_action_generate_goods (parameters: None)
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 19, 'funds': 4, 'actions_left': 4}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 1, 'freight': 3, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_transport_goods (parameters: {'destination_id': 5})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 5, 'funds': 4, 'actions_left': 2}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_transport_goods (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 6, 'funds': 4, 'actions_left': 0}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INDUSTRY (ID: 0) draws (1) from the top of the player card stack.
+INFO:root:Player INDUSTRY (ID: 0) receives 1 fund (now has 5).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 0.
+INFO:root:Player INDUSTRY (ID: 0) draws (11) from the top of the damage card stack.
+INFO:root:Node 11 (Hamm) receives 1 damage (now has 1)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 2, 'actions_left': 4}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 2, 'actions_left': 4}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 1, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 2, 'actions_left': 3}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 1, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 2, 'actions_left': 2}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 1, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 2, 'actions_left': 1}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 1, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INVESTOR (ID: 1) draws (1) from the top of the player card stack.
+INFO:root:Player INVESTOR (ID: 1) receives 1 fund (now has 3).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 0.
+INFO:root:Player INVESTOR (ID: 1) draws (4) from the top of the damage card stack.
+INFO:root:Node 4 (Dorsten) receives 1 damage (now has 1)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 19, 'funds': 2, 'actions_left': 4}
+INFO:root:DRIVER (ID: 2) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 19, 'funds': 3, 'actions_left': 4}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 5})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 5, 'funds': 3, 'actions_left': 3}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 6, 'funds': 3, 'actions_left': 2}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 7, 'funds': 3, 'actions_left': 1}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 2) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 2) receives 1 fund (now has 4).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 0.
+INFO:root:Player DRIVER (ID: 2) draws (17) from the top of the damage card stack.
+INFO:root:Node 17 (Herne-Ost) receives 1 damage (now has 4)
+INFO:root:Node 17 (Herne-Ost) is affected by a cascade. Cascade level is now 1.
+INFO:root:Node 9 (DEK) receives 1 damage (now has 1)
+INFO:root:Node 16 (Wanne-Eickel) receives 1 damage (now has 1)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 19, 'funds': 2, 'actions_left': 4}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 5})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 5, 'funds': 2, 'actions_left': 4}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 6, 'funds': 2, 'actions_left': 3}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 7, 'funds': 2, 'actions_left': 2}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 9, 'funds': 2, 'actions_left': 1}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 3) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 3) receives 1 fund (now has 3).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 0.
+INFO:root:Player DRIVER (ID: 3) draws (0) from the top of the damage card stack.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 6, 'funds': 5, 'actions_left': -1}
+INFO:root:INDUSTRY (ID: 0) do_player_action_transport_goods (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 7, 'funds': 5, 'actions_left': 3}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_transport_goods (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 9, 'funds': 5, 'actions_left': 1}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 1, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INDUSTRY (ID: 0) draws (1) from the top of the player card stack.
+INFO:root:Player INDUSTRY (ID: 0) receives 1 fund (now has 6).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 0.
+INFO:root:Player INDUSTRY (ID: 0) draws (5) from the top of the damage card stack.
+INFO:root:Node 5 (Flaesheim) receives 1 damage (now has 1)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 3, 'actions_left': 0}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 3, 'actions_left': 4}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 3, 'actions_left': 3}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 3, 'actions_left': 2}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 3, 'actions_left': 1}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INVESTOR (ID: 1) draws (1) from the top of the player card stack.
+INFO:root:Player INVESTOR (ID: 1) receives 1 fund (now has 4).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 0.
+INFO:root:Player INVESTOR (ID: 1) draws (0) from the top of the damage card stack.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 7, 'funds': 4, 'actions_left': 0}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 9, 'funds': 4, 'actions_left': 4}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 1, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 17})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 17, 'funds': 4, 'actions_left': 3}
+INFO:root:Node Status: {'id': 17, 'name': 'Herne-Ost', 'node_type': 'green', 'neighbors': [9, 16], 'damage': 3, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 17, 'funds': 5, 'actions_left': 2}
+INFO:root:Node Status: {'id': 17, 'name': 'Herne-Ost', 'node_type': 'green', 'neighbors': [9, 16], 'damage': 2, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 9, 'funds': 5, 'actions_left': 1}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 1, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 2) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 2) receives 1 fund (now has 6).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 0.
+INFO:root:Player DRIVER (ID: 2) draws (10) from the top of the damage card stack.
+INFO:root:Node 10 (DHK) receives 1 damage (now has 1)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 9, 'funds': 3, 'actions_left': 0}
+INFO:root:DRIVER (ID: 3) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 9, 'funds': 4, 'actions_left': 4}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 7, 'funds': 4, 'actions_left': 3}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 6, 'funds': 4, 'actions_left': 2}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 5})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 5, 'funds': 4, 'actions_left': 1}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 3) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 3) receives 1 fund (now has 5).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 0.
+INFO:root:Player DRIVER (ID: 3) draws (7) from the top of the damage card stack.
+INFO:root:Node 7 (Datteln) receives 1 damage (now has 1)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 9, 'funds': 6, 'actions_left': 0}
+INFO:root:INDUSTRY (ID: 0) do_player_action_transport_goods (parameters: {'destination_id': 18})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 18, 'funds': 6, 'actions_left': 3}
+INFO:root:Node Status: {'id': 18, 'name': 'Heinrichenburg', 'node_type': 'green', 'neighbors': [9, 21], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_transport_goods (parameters: {'destination_id': 21})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 21, 'funds': 6, 'actions_left': 1}
+INFO:root:Node Status: {'id': 21, 'name': 'Hafen Dortmund', 'node_type': 'purple', 'neighbors': [18], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INDUSTRY (ID: 0) draws (1) from the top of the player card stack.
+INFO:root:Player INDUSTRY (ID: 0) receives 1 fund (now has 7).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 0.
+INFO:root:Player INDUSTRY (ID: 0) draws (0) from the top of the damage card stack.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 4, 'actions_left': 0}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 4, 'actions_left': 4}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 4, 'actions_left': 3}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 4, 'actions_left': 2}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 4, 'actions_left': 1}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INVESTOR (ID: 1) draws (1) from the top of the player card stack.
+INFO:root:Player INVESTOR (ID: 1) receives 1 fund (now has 5).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 0.
+INFO:root:Player INVESTOR (ID: 1) draws (0) from the top of the damage card stack.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 9, 'funds': 6, 'actions_left': 0}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 7, 'funds': 6, 'actions_left': 4}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 6, 'funds': 6, 'actions_left': 3}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 5})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 5, 'funds': 6, 'actions_left': 2}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 5, 'funds': 7, 'actions_left': 1}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 2) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 2) receives 1 fund (now has 8).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 0.
+INFO:root:Player DRIVER (ID: 2) draws (3) from the top of the damage card stack.
+INFO:root:Node 3 (Hünxe) receives 1 damage (now has 3)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 5, 'funds': 5, 'actions_left': 0}
+WARNING:root:Invalid Action do_player_action_repair. Doing nothing instead.
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 6, 'funds': 5, 'actions_left': 3}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 7, 'funds': 5, 'actions_left': 2}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 7, 'funds': 6, 'actions_left': 1}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 3) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 3) receives 1 fund (now has 7).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 0.
+INFO:root:Player DRIVER (ID: 3) draws (8) from the top of the damage card stack.
+INFO:root:Node 8 (Münster) receives 1 damage (now has 1)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 21, 'funds': 7, 'actions_left': 0}
+INFO:root:INDUSTRY (ID: 0) do_player_action_run (parameters: {'destination_id': 18})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 18, 'funds': 7, 'actions_left': 4}
+INFO:root:Node Status: {'id': 18, 'name': 'Heinrichenburg', 'node_type': 'green', 'neighbors': [9, 21], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_run (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 9, 'funds': 7, 'actions_left': 3}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 7, 'funds': 7, 'actions_left': 2}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 6, 'funds': 7, 'actions_left': 1}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INDUSTRY (ID: 0) draws (1) from the top of the player card stack.
+INFO:root:Player INDUSTRY (ID: 0) receives 1 fund (now has 8).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 0.
+INFO:root:Player INDUSTRY (ID: 0) draws (12) from the top of the damage card stack.
+INFO:root:Node 12 (RHK) receives 1 damage (now has 1)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 5, 'actions_left': 0}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 5, 'actions_left': 4}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 5, 'actions_left': 3}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 5, 'actions_left': 2}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 5, 'actions_left': 1}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INVESTOR (ID: 1) draws (1) from the top of the player card stack.
+INFO:root:Player INVESTOR (ID: 1) receives 1 fund (now has 6).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 0.
+INFO:root:Player INVESTOR (ID: 1) draws (1) from the top of the damage card stack.
+INFO:root:Node 1 (WDK) receives 1 damage (now has 1)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 5, 'funds': 8, 'actions_left': 0}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 4})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 4, 'funds': 8, 'actions_left': 4}
+INFO:root:Node Status: {'id': 4, 'name': 'Dorsten', 'node_type': 'green', 'neighbors': [3, 5, 19], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 3})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 3, 'funds': 8, 'actions_left': 3}
+INFO:root:Node Status: {'id': 3, 'name': 'Hünxe', 'node_type': 'green', 'neighbors': [2, 4], 'damage': 3, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 3, 'funds': 9, 'actions_left': 2}
+INFO:root:Node Status: {'id': 3, 'name': 'Hünxe', 'node_type': 'green', 'neighbors': [2, 4], 'damage': 2, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 3, 'funds': 10, 'actions_left': 1}
+INFO:root:Node Status: {'id': 3, 'name': 'Hünxe', 'node_type': 'green', 'neighbors': [2, 4], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 2) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 2) receives 1 fund (now has 11).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 0.
+INFO:root:Player DRIVER (ID: 2) draws (13) from the top of the damage card stack.
+INFO:root:Node 13 (Duisburg-Mederich) receives 1 damage (now has 1)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 7, 'funds': 7, 'actions_left': 0}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 9, 'funds': 7, 'actions_left': 4}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 17})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 17, 'funds': 7, 'actions_left': 3}
+INFO:root:Node Status: {'id': 17, 'name': 'Herne-Ost', 'node_type': 'green', 'neighbors': [9, 16], 'damage': 2, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 17, 'funds': 8, 'actions_left': 2}
+INFO:root:Node Status: {'id': 17, 'name': 'Herne-Ost', 'node_type': 'green', 'neighbors': [9, 16], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 9, 'funds': 8, 'actions_left': 1}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 3) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 3) receives 1 fund (now has 9).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 0.
+INFO:root:Player DRIVER (ID: 3) draws (15) from the top of the damage card stack.
+INFO:root:Node 15 (Gelsenkrichen) receives 1 damage (now has 1)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 6, 'funds': 8, 'actions_left': 0}
+INFO:root:INDUSTRY (ID: 0) do_player_action_run (parameters: {'destination_id': 5})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 5, 'funds': 8, 'actions_left': 4}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_run (parameters: {'destination_id': 19})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 19, 'funds': 8, 'actions_left': 3}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_transport_goods (parameters: {'destination_id': 5})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 5, 'funds': 8, 'actions_left': 1}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INDUSTRY (ID: 0) draws (1) from the top of the player card stack.
+INFO:root:Player INDUSTRY (ID: 0) receives 1 fund (now has 9).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 0.
+INFO:root:Player INDUSTRY (ID: 0) draws (9) from the top of the damage card stack.
+INFO:root:Node 9 (DEK) receives 1 damage (now has 1)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 6, 'actions_left': 0}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 6, 'actions_left': 4}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 6, 'actions_left': 3}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 6, 'actions_left': 2}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 6, 'actions_left': 1}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INVESTOR (ID: 1) draws (0) from the top of the player card stack.
+INFO:root:Destrution level increased to 1. Drawing a damage card.
+INFO:root:Player INVESTOR (ID: 1) draws (0) from the top of the damage card stack.
+INFO:root:Shuffle damage card discard stack and put it on top of the damage card stack.
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 1.
+INFO:root:Player INVESTOR (ID: 1) draws (17) from the top of the damage card stack.
+INFO:root:Node 17 (Herne-Ost) receives 1 damage (now has 2)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 3, 'funds': 11, 'actions_left': 0}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 4})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 4, 'funds': 11, 'actions_left': 4}
+INFO:root:Node Status: {'id': 4, 'name': 'Dorsten', 'node_type': 'green', 'neighbors': [3, 5, 19], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 5})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 5, 'funds': 11, 'actions_left': 3}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 6, 'funds': 11, 'actions_left': 2}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 7, 'funds': 11, 'actions_left': 1}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 2) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 2) receives 1 fund (now has 12).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 1.
+INFO:root:Player DRIVER (ID: 2) draws (0) from the top of the damage card stack.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 9, 'funds': 9, 'actions_left': 0}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 7, 'funds': 9, 'actions_left': 4}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 6, 'funds': 9, 'actions_left': 3}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 5})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 5, 'funds': 9, 'actions_left': 2}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 4})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 4, 'funds': 9, 'actions_left': 1}
+INFO:root:Node Status: {'id': 4, 'name': 'Dorsten', 'node_type': 'green', 'neighbors': [3, 5, 19], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 3) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 3) receives 1 fund (now has 10).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 1.
+INFO:root:Player DRIVER (ID: 3) draws (0) from the top of the damage card stack.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 5, 'funds': 9, 'actions_left': 0}
+INFO:root:INDUSTRY (ID: 0) do_player_action_transport_goods (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 6, 'funds': 9, 'actions_left': 3}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_transport_goods (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 7, 'funds': 9, 'actions_left': 1}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INDUSTRY (ID: 0) draws (1) from the top of the player card stack.
+INFO:root:Player INDUSTRY (ID: 0) receives 1 fund (now has 10).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 1.
+INFO:root:Player INDUSTRY (ID: 0) draws (3) from the top of the damage card stack.
+INFO:root:Node 3 (Hünxe) receives 1 damage (now has 2)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 6, 'actions_left': 0}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 6, 'actions_left': 4}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 6, 'actions_left': 3}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 6, 'actions_left': 2}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 6, 'actions_left': 1}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INVESTOR (ID: 1) draws (1) from the top of the player card stack.
+INFO:root:Player INVESTOR (ID: 1) receives 1 fund (now has 7).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 1.
+INFO:root:Player INVESTOR (ID: 1) draws (16) from the top of the damage card stack.
+INFO:root:Node 16 (Wanne-Eickel) receives 1 damage (now has 2)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 7, 'funds': 12, 'actions_left': 0}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 9, 'funds': 12, 'actions_left': 4}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 9, 'funds': 13, 'actions_left': 3}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 7, 'funds': 13, 'actions_left': 2}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 6, 'funds': 13, 'actions_left': 1}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 2) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 2) receives 1 fund (now has 14).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 1.
+INFO:root:Player DRIVER (ID: 2) draws (5) from the top of the damage card stack.
+INFO:root:Node 5 (Flaesheim) receives 1 damage (now has 1)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 4, 'funds': 10, 'actions_left': 0}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 3})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 3, 'funds': 10, 'actions_left': 4}
+INFO:root:Node Status: {'id': 3, 'name': 'Hünxe', 'node_type': 'green', 'neighbors': [2, 4], 'damage': 2, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 2})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 2, 'funds': 10, 'actions_left': 3}
+INFO:root:Node Status: {'id': 2, 'name': 'Friedrichsfeld', 'node_type': 'green', 'neighbors': [1, 3], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 1})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 1, 'funds': 10, 'actions_left': 2}
+INFO:root:Node Status: {'id': 1, 'name': 'WDK', 'node_type': 'orange', 'neighbors': [2], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 1, 'funds': 11, 'actions_left': 1}
+INFO:root:Node Status: {'id': 1, 'name': 'WDK', 'node_type': 'orange', 'neighbors': [2], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 3) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 3) receives 1 fund (now has 12).
+INFO:root:Start damage phase.
+INFO:root:Draw 1 cards due to destruction level 1.
+INFO:root:Player DRIVER (ID: 3) draws (0) from the top of the damage card stack.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 7, 'funds': 10, 'actions_left': 0}
+INFO:root:INDUSTRY (ID: 0) do_player_action_transport_goods (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 9, 'funds': 10, 'actions_left': 3}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_transport_goods (parameters: {'destination_id': 18})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 18, 'funds': 10, 'actions_left': 1}
+INFO:root:Node Status: {'id': 18, 'name': 'Heinrichenburg', 'node_type': 'green', 'neighbors': [9, 21], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INDUSTRY (ID: 0) draws (0) from the top of the player card stack.
+INFO:root:Destrution level increased to 2. Drawing a damage card.
+INFO:root:Player INDUSTRY (ID: 0) draws (18) from the top of the damage card stack.
+INFO:root:Node 18 (Heinrichenburg) receives 3 damage (now has 3)
+INFO:root:Shuffle damage card discard stack and put it on top of the damage card stack.
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:Player INDUSTRY (ID: 0) draws (18) from the top of the damage card stack.
+INFO:root:Node 18 (Heinrichenburg) receives 1 damage (now has 4)
+INFO:root:Node 18 (Heinrichenburg) is affected by a cascade. Cascade level is now 2.
+INFO:root:Node 9 (DEK) receives 1 damage (now has 1)
+INFO:root:Node 21 (Hafen Dortmund) receives 1 damage (now has 1)
+INFO:root:Player INDUSTRY (ID: 0) draws (0) from the top of the damage card stack.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 7, 'actions_left': 0}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 7, 'actions_left': 4}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 7, 'actions_left': 3}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 7, 'actions_left': 2}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 7, 'actions_left': 1}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INVESTOR (ID: 1) draws (1) from the top of the player card stack.
+INFO:root:Player INVESTOR (ID: 1) receives 1 fund (now has 8).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:Player INVESTOR (ID: 1) draws (5) from the top of the damage card stack.
+INFO:root:Node 5 (Flaesheim) receives 1 damage (now has 2)
+INFO:root:Player INVESTOR (ID: 1) draws (0) from the top of the damage card stack.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 6, 'funds': 14, 'actions_left': 0}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 5})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 5, 'funds': 14, 'actions_left': 4}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 2, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 4})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 4, 'funds': 14, 'actions_left': 3}
+INFO:root:Node Status: {'id': 4, 'name': 'Dorsten', 'node_type': 'green', 'neighbors': [3, 5, 19], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 3})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 3, 'funds': 14, 'actions_left': 2}
+INFO:root:Node Status: {'id': 3, 'name': 'Hünxe', 'node_type': 'green', 'neighbors': [2, 4], 'damage': 2, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 3, 'funds': 15, 'actions_left': 1}
+INFO:root:Node Status: {'id': 3, 'name': 'Hünxe', 'node_type': 'green', 'neighbors': [2, 4], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 2) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 2) receives 1 fund (now has 16).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:Player DRIVER (ID: 2) draws (17) from the top of the damage card stack.
+INFO:root:Node 17 (Herne-Ost) receives 1 damage (now has 3)
+INFO:root:Player DRIVER (ID: 2) draws (0) from the top of the damage card stack.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 1, 'funds': 12, 'actions_left': 0}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 2})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 2, 'funds': 12, 'actions_left': 4}
+INFO:root:Node Status: {'id': 2, 'name': 'Friedrichsfeld', 'node_type': 'green', 'neighbors': [1, 3], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 3})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 3, 'funds': 12, 'actions_left': 3}
+INFO:root:Node Status: {'id': 3, 'name': 'Hünxe', 'node_type': 'green', 'neighbors': [2, 4], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 4})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 4, 'funds': 12, 'actions_left': 2}
+INFO:root:Node Status: {'id': 4, 'name': 'Dorsten', 'node_type': 'green', 'neighbors': [3, 5, 19], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 5})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 5, 'funds': 12, 'actions_left': 1}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 2, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 3) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 3) receives 1 fund (now has 13).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:Player DRIVER (ID: 3) draws (3) from the top of the damage card stack.
+INFO:root:Node 3 (Hünxe) receives 1 damage (now has 2)
+INFO:root:Player DRIVER (ID: 3) draws (16) from the top of the damage card stack.
+INFO:root:Node 16 (Wanne-Eickel) receives 1 damage (now has 3)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 18, 'funds': 10, 'actions_left': 0}
+WARNING:root:Invalid Action do_player_action_transport_goods. Doing nothing instead.
+WARNING:root:Invalid Action do_player_action_transport_goods. Doing nothing instead.
+WARNING:root:Invalid Action do_player_action_transport_goods. Doing nothing instead.
+WARNING:root:Invalid Action do_player_action_transport_goods. Doing nothing instead.
+INFO:root:Start resupply phase.
+INFO:root:Player INDUSTRY (ID: 0) draws (1) from the top of the player card stack.
+INFO:root:Player INDUSTRY (ID: 0) receives 1 fund (now has 11).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:Player INDUSTRY (ID: 0) draws (13) from the top of the damage card stack.
+INFO:root:Node 13 (Duisburg-Mederich) receives 1 damage (now has 2)
+INFO:root:Player INDUSTRY (ID: 0) draws (2) from the top of the damage card stack.
+INFO:root:Node 2 (Friedrichsfeld) receives 1 damage (now has 1)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 8, 'actions_left': 0}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 8, 'actions_left': 4}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 8, 'actions_left': 3}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 8, 'actions_left': 2}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 8, 'actions_left': 1}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INVESTOR (ID: 1) draws (1) from the top of the player card stack.
+INFO:root:Player INVESTOR (ID: 1) receives 1 fund (now has 9).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:Player INVESTOR (ID: 1) draws (8) from the top of the damage card stack.
+INFO:root:Node 8 (Münster) receives 1 damage (now has 2)
+INFO:root:Player INVESTOR (ID: 1) draws (9) from the top of the damage card stack.
+INFO:root:Node 9 (DEK) receives 1 damage (now has 2)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 3, 'funds': 16, 'actions_left': 0}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 4})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 4, 'funds': 16, 'actions_left': 4}
+INFO:root:Node Status: {'id': 4, 'name': 'Dorsten', 'node_type': 'green', 'neighbors': [3, 5, 19], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 5})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 5, 'funds': 16, 'actions_left': 3}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 2, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 6, 'funds': 16, 'actions_left': 2}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 7, 'funds': 16, 'actions_left': 1}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 2) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 2) receives 1 fund (now has 17).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:Player DRIVER (ID: 2) draws (1) from the top of the damage card stack.
+INFO:root:Node 1 (WDK) receives 1 damage (now has 1)
+INFO:root:Player DRIVER (ID: 2) draws (4) from the top of the damage card stack.
+INFO:root:Node 4 (Dorsten) receives 1 damage (now has 2)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 5, 'funds': 13, 'actions_left': 0}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 6, 'funds': 13, 'actions_left': 4}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 7, 'funds': 13, 'actions_left': 3}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 9, 'funds': 13, 'actions_left': 2}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 2, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 18})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 18, 'funds': 13, 'actions_left': 1}
+INFO:root:Node Status: {'id': 18, 'name': 'Heinrichenburg', 'node_type': 'green', 'neighbors': [9, 21], 'damage': 3, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 3) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 3) receives 1 fund (now has 14).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:Player DRIVER (ID: 3) draws (12) from the top of the damage card stack.
+INFO:root:Node 12 (RHK) receives 1 damage (now has 2)
+INFO:root:Player DRIVER (ID: 3) draws (11) from the top of the damage card stack.
+INFO:root:Node 11 (Hamm) receives 1 damage (now has 2)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 18, 'funds': 11, 'actions_left': 0}
+WARNING:root:Invalid Action do_player_action_transport_goods. Doing nothing instead.
+WARNING:root:Invalid Action do_player_action_transport_goods. Doing nothing instead.
+WARNING:root:Invalid Action do_player_action_transport_goods. Doing nothing instead.
+WARNING:root:Invalid Action do_player_action_transport_goods. Doing nothing instead.
+INFO:root:Start resupply phase.
+INFO:root:Player INDUSTRY (ID: 0) draws (1) from the top of the player card stack.
+INFO:root:Player INDUSTRY (ID: 0) receives 1 fund (now has 12).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:Player INDUSTRY (ID: 0) draws (0) from the top of the damage card stack.
+INFO:root:Player INDUSTRY (ID: 0) draws (7) from the top of the damage card stack.
+INFO:root:Node 7 (Datteln) receives 1 damage (now has 1)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 9, 'actions_left': 0}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 9, 'actions_left': 4}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 9, 'actions_left': 3}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 9, 'actions_left': 2}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 9, 'actions_left': 1}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INVESTOR (ID: 1) draws (1) from the top of the player card stack.
+INFO:root:Player INVESTOR (ID: 1) receives 1 fund (now has 10).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:Player INVESTOR (ID: 1) draws (15) from the top of the damage card stack.
+INFO:root:Node 15 (Gelsenkrichen) receives 1 damage (now has 2)
+INFO:root:Player INVESTOR (ID: 1) draws (0) from the top of the damage card stack.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 7, 'funds': 17, 'actions_left': 0}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 9, 'funds': 17, 'actions_left': 4}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 2, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 18})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 18, 'funds': 17, 'actions_left': 3}
+INFO:root:Node Status: {'id': 18, 'name': 'Heinrichenburg', 'node_type': 'green', 'neighbors': [9, 21], 'damage': 3, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 18, 'funds': 18, 'actions_left': 2}
+INFO:root:Node Status: {'id': 18, 'name': 'Heinrichenburg', 'node_type': 'green', 'neighbors': [9, 21], 'damage': 2, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 9, 'funds': 18, 'actions_left': 1}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 2, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 2) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 2) receives 1 fund (now has 19).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:Player DRIVER (ID: 2) draws (10) from the top of the damage card stack.
+INFO:root:Node 10 (DHK) receives 1 damage (now has 2)
+INFO:root:Player DRIVER (ID: 2) draws (14) from the top of the damage card stack.
+INFO:root:Node 14 (Oberhausen) receives 1 damage (now has 1)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 18, 'funds': 14, 'actions_left': 0}
+INFO:root:DRIVER (ID: 3) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 18, 'funds': 15, 'actions_left': 4}
+INFO:root:Node Status: {'id': 18, 'name': 'Heinrichenburg', 'node_type': 'green', 'neighbors': [9, 21], 'damage': 1, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 9, 'funds': 15, 'actions_left': 3}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 2, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 7, 'funds': 15, 'actions_left': 2}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 6, 'funds': 15, 'actions_left': 1}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 3) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 3) receives 1 fund (now has 16).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:Player DRIVER (ID: 3) draws (6) from the top of the damage card stack.
+INFO:root:Node 6 (Ahsen) receives 1 damage (now has 1)
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 18, 'funds': 12, 'actions_left': 0}
+INFO:root:INDUSTRY (ID: 0) do_player_action_transport_goods (parameters: {'destination_id': 21})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 21, 'funds': 12, 'actions_left': 3}
+INFO:root:Node Status: {'id': 21, 'name': 'Hafen Dortmund', 'node_type': 'purple', 'neighbors': [18], 'damage': 1, 'freight': 2, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_run (parameters: {'destination_id': 18})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 18, 'funds': 12, 'actions_left': 2}
+INFO:root:Node Status: {'id': 18, 'name': 'Heinrichenburg', 'node_type': 'green', 'neighbors': [9, 21], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_run (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 9, 'funds': 12, 'actions_left': 1}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 2, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INDUSTRY (ID: 0) draws (1) from the top of the player card stack.
+INFO:root:Player INDUSTRY (ID: 0) receives 1 fund (now has 13).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 10, 'actions_left': 0}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 10, 'actions_left': 4}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 10, 'actions_left': 3}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 10, 'actions_left': 2}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 10, 'actions_left': 1}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INVESTOR (ID: 1) draws (1) from the top of the player card stack.
+INFO:root:Player INVESTOR (ID: 1) receives 1 fund (now has 11).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 9, 'funds': 19, 'actions_left': 0}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 7, 'funds': 19, 'actions_left': 4}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 6, 'funds': 19, 'actions_left': 3}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 5})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 5, 'funds': 19, 'actions_left': 2}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 2, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 5, 'funds': 20, 'actions_left': 1}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 2) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 2) receives 1 fund (now has 21).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 6, 'funds': 16, 'actions_left': 0}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 5})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 5, 'funds': 16, 'actions_left': 4}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 5, 'funds': 17, 'actions_left': 3}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 6, 'funds': 17, 'actions_left': 2}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 7, 'funds': 17, 'actions_left': 1}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 3) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 3) receives 1 fund (now has 18).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 9, 'funds': 13, 'actions_left': 0}
+INFO:root:INDUSTRY (ID: 0) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 7, 'funds': 13, 'actions_left': 4}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 6, 'funds': 13, 'actions_left': 3}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_run (parameters: {'destination_id': 5})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 5, 'funds': 13, 'actions_left': 2}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_run (parameters: {'destination_id': 19})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 19, 'funds': 13, 'actions_left': 1}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INDUSTRY (ID: 0) draws (1) from the top of the player card stack.
+INFO:root:Player INDUSTRY (ID: 0) receives 1 fund (now has 14).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 11, 'actions_left': 0}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 11, 'actions_left': 4}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 11, 'actions_left': 3}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 11, 'actions_left': 2}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 11, 'actions_left': 1}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INVESTOR (ID: 1) draws (1) from the top of the player card stack.
+INFO:root:Player INVESTOR (ID: 1) receives 1 fund (now has 12).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 5, 'funds': 21, 'actions_left': 0}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 6, 'funds': 21, 'actions_left': 4}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 7, 'funds': 21, 'actions_left': 3}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 9, 'funds': 21, 'actions_left': 2}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 2, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 9, 'funds': 22, 'actions_left': 1}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 2) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 2) receives 1 fund (now has 23).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 7, 'funds': 18, 'actions_left': 0}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 9, 'funds': 18, 'actions_left': 4}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 9, 'funds': 19, 'actions_left': 3}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 7, 'funds': 19, 'actions_left': 2}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 6, 'funds': 19, 'actions_left': 1}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 3) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 3) receives 1 fund (now has 20).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 2.
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 19, 'funds': 14, 'actions_left': 0}
+INFO:root:INDUSTRY (ID: 0) do_player_action_transport_goods (parameters: {'destination_id': 5})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 5, 'funds': 14, 'actions_left': 3}
+INFO:root:Node Status: {'id': 5, 'name': 'Flaesheim', 'node_type': 'green', 'neighbors': [4, 6, 19], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_transport_goods (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 6, 'funds': 14, 'actions_left': 1}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 1, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INDUSTRY (ID: 0) draws (0) from the top of the player card stack.
+INFO:root:Destrution level increased to 3. Drawing a damage card.
+INFO:root:The damage card stack is empty. The next time the damage card are restocked, a card will be drawn and 3 damage points will be added to that note.
+INFO:root:Shuffle damage card discard stack and put it on top of the damage card stack.
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 3.
+INFO:root:Player INDUSTRY (ID: 0) draws (0) from the top of the damage card stack.
+INFO:root:Player INDUSTRY (ID: 0) draws (4) from the top of the damage card stack.
+INFO:root:Node 4 (Dorsten) receives 1 damage (now has 3)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 12, 'actions_left': 0}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 12, 'actions_left': 4}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 12, 'actions_left': 3}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 12, 'actions_left': 2}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:INVESTOR (ID: 1) do_player_action_nothing (parameters: None)
+INFO:root:Player Status: {'id': 1, 'name': 'INVESTOR (ID: 1)', 'type': 'INVESTOR', 'location_id': 19, 'funds': 12, 'actions_left': 1}
+INFO:root:Node Status: {'id': 19, 'name': 'Hafen Marl', 'node_type': 'purple', 'neighbors': [4, 5], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INVESTOR (ID: 1) draws (1) from the top of the player card stack.
+INFO:root:Player INVESTOR (ID: 1) receives 1 fund (now has 13).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 3.
+INFO:root:Player INVESTOR (ID: 1) draws (6) from the top of the damage card stack.
+INFO:root:Node 6 (Ahsen) receives 1 damage (now has 2)
+INFO:root:Player INVESTOR (ID: 1) draws (3) from the top of the damage card stack.
+INFO:root:Node 3 (Hünxe) receives 1 damage (now has 3)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 9, 'funds': 23, 'actions_left': 0}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 7, 'funds': 23, 'actions_left': 4}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_run (parameters: {'destination_id': 6})
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 6, 'funds': 23, 'actions_left': 3}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 2, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 6, 'funds': 24, 'actions_left': 2}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 1, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 2) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 2, 'name': 'DRIVER (ID: 2)', 'type': 'DRIVER', 'location_id': 6, 'funds': 25, 'actions_left': 1}
+INFO:root:Node Status: {'id': 6, 'name': 'Ahsen', 'node_type': 'green', 'neighbors': [5, 7], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 2) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 2) receives 1 fund (now has 26).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 3.
+INFO:root:Player DRIVER (ID: 2) draws (11) from the top of the damage card stack.
+INFO:root:Node 11 (Hamm) receives 1 damage (now has 3)
+INFO:root:Player DRIVER (ID: 2) draws (13) from the top of the damage card stack.
+INFO:root:Node 13 (Duisburg-Mederich) receives 1 damage (now has 3)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 6, 'funds': 20, 'actions_left': 0}
+WARNING:root:Invalid Action do_player_action_repair. Doing nothing instead.
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 7, 'funds': 20, 'actions_left': 3}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 1, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_repair (parameters: None)
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 7, 'funds': 21, 'actions_left': 2}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:DRIVER (ID: 3) do_player_action_run (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 3, 'name': 'DRIVER (ID: 3)', 'type': 'DRIVER', 'location_id': 9, 'funds': 21, 'actions_left': 1}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 0, 'freight': 0, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player DRIVER (ID: 3) draws (1) from the top of the player card stack.
+INFO:root:Player DRIVER (ID: 3) receives 1 fund (now has 22).
+INFO:root:Start damage phase.
+INFO:root:Draw 2 cards due to destruction level 3.
+INFO:root:Player DRIVER (ID: 3) draws (1) from the top of the damage card stack.
+INFO:root:Node 1 (WDK) receives 1 damage (now has 2)
+INFO:root:Player DRIVER (ID: 3) draws (16) from the top of the damage card stack.
+INFO:root:Node 16 (Wanne-Eickel) receives 1 damage (now has 4)
+INFO:root:Node 16 (Wanne-Eickel) is affected by a cascade. Cascade level is now 3.
+INFO:root:Node 15 (Gelsenkrichen) receives 1 damage (now has 3)
+INFO:root:Node 17 (Herne-Ost) receives 1 damage (now has 4)
+INFO:root:Node 17 (Herne-Ost) is affected by a cascade. Cascade level is now 4.
+INFO:root:Node 9 (DEK) receives 1 damage (now has 1)
+INFO:root:Start action phase.
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 6, 'funds': 14, 'actions_left': 0}
+INFO:root:INDUSTRY (ID: 0) do_player_action_transport_goods (parameters: {'destination_id': 7})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 7, 'funds': 14, 'actions_left': 3}
+INFO:root:Node Status: {'id': 7, 'name': 'Datteln', 'node_type': 'green', 'neighbors': [6, 9], 'damage': 0, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:INDUSTRY (ID: 0) do_player_action_transport_goods (parameters: {'destination_id': 9})
+INFO:root:Player Status: {'id': 0, 'name': 'INDUSTRY (ID: 0)', 'type': 'INDUSTRY', 'location_id': 9, 'funds': 14, 'actions_left': 1}
+INFO:root:Node Status: {'id': 9, 'name': 'DEK', 'node_type': 'orange', 'neighbors': [7, 8, 10, 17, 18], 'damage': 1, 'freight': 1, 'affected_by_cascade': False}
+INFO:root:Start resupply phase.
+INFO:root:Player INDUSTRY (ID: 0) draws (0) from the top of the player card stack.
+INFO:root:Destrution level increased to 4. Drawing a damage card.
+INFO:root:Player INDUSTRY (ID: 0) draws (0) from the top of the damage card stack.
+INFO:root:Shuffle damage card discard stack and put it on top of the damage card stack.
+INFO:root:Start damage phase.
+INFO:root:Draw 3 cards due to destruction level 4.
+INFO:root:Player INDUSTRY (ID: 0) draws (3) from the top of the damage card stack.
+INFO:root:Node 3 (Hünxe) receives 1 damage (now has 4)
+INFO:root:Node 3 (Hünxe) is affected by a cascade. Cascade level is now 5.
+INFO:root:Node 2 (Friedrichsfeld) receives 1 damage (now has 2)
+INFO:root:Node 4 (Dorsten) receives 1 damage (now has 4)
+INFO:root:Node 4 (Dorsten) is affected by a cascade. Cascade level is now 6.
+INFO:root:Game lost: Cascade level is 6, but is only allowed to be max. 5.
