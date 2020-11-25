@@ -6,7 +6,7 @@ if TYPE_CHECKING:
 import logging
 # logging configuration 
 try:
-    logging.basicConfig(filename='game.log', encoding='utf-8', level=logging.DEBUG)
+    logging.basicConfig(filename='game.log', encoding='utf-8', level=logging.DEBUG, filemode='w')
 except ValueError:
     # produces a value error that does not seem to have any effect, so ignoring it. Possible a bug in python version 3.7.x
     pass
@@ -66,7 +66,7 @@ def do_player_action_generate_goods(game:Game, player_id:int) -> None:
         raise InvalidActionException(player) 
     if node.freight >= 3: 
         raise InvalidActionException(player) 
-    player.funds += 2
+    player.funds -= 2
     node.freight += 1
     
 def do_player_action_transport_goods(game:Game, player_id:int, destination_id:int) -> None:

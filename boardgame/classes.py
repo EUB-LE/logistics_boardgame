@@ -17,9 +17,9 @@ class Game():
             random.seed(random_seed)
         self.cascade_level:int = 0
         self.destruction_level:int = 0
-        self.damage_cards:list[int] = _create_and_shuffle_damage_cards()
+        self.damage_cards:list[int] = _create_and_shuffle_damage_cards(number_of_jokers=NUMBER_OF_DAMAGE_CARD_JOKERS)
         self.damage_cards_discards:list[int] = []
-        self.player_cards:list[int] = _create_and_shuffle_player_cards()
+        self.player_cards:list[int] = _create_and_shuffle_player_cards(NUMBER_OF_FUND_CARDS, NUMBER_OF_DAMAGE_CARDS)
         self.player_cards_discards:list[int] = []
         self.players:list[Player] = [
             Player(type=PLAYER_TYPE_INDUSTRY),
@@ -64,8 +64,8 @@ class Game():
         node =  self._get_node_by_id(node_id)
         node.damage += damage_value
         logging.info(f"Node {node_id} ({node.name}) receives {damage_value} damage (now has {node.damage})")
-        if node.damage > 3:
-            node.damage = 3
+        if node.damage > CASCADE_DAMAGE_THRESHOLD:
+            node.damage = CASCADE_DAMAGE_THRESHOLD
             self._cascade_node(node_id=node_id)
     
     def _cascade_node(self, node_id:int) -> None: 
@@ -73,8 +73,8 @@ class Game():
         node.affected_by_cascade = True
         self.cascade_level += 1
         logging.info(f"Node {node_id} ({node.name}) is affected by a cascade. Cascade level is now {self.cascade_level}.")
-        if self.cascade_level >= 6: 
-            raise GameLostException(f"Cascade level is {self.cascade_level}, but is only allowed to be max. 5.")  
+        if self.cascade_level >= CASCADE_DEFEAT_LEVEL: 
+            raise GameLostException(f"Cascade level is {self.cascade_level}, but is only allowed to be max. {CASCADE_DEFEAT_LEVEL}")  
         for neighbor_node_id in node.neighbors:
             neighbor_node = self._get_node_by_id(neighbor_node_id)
             if not neighbor_node.affected_by_cascade:
@@ -230,13 +230,14 @@ def _load_nodes_from_json(path_to_json:str = "boardgame/res/map.json") -> list[N
             result.append(Node(**entry))
         return result
 
-def _create_and_shuffle_damage_cards() -> list[int]:
+def _create_and_shuffle_damage_cards(node_indices:list(int)=None, number_of_jokers:int = 4) -> list[int]:
     """Emulate a shuffled standard deck of 1 to 21 with two jokers (=0) and only one color
 
     Returns:
             list[int]: shuffled standard deck of 23 cards
     """
-    damage_cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 0, 0, 0, 0, 0]
+    damage_cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18] if not node_indices else node_indices
+    damage_cards + [0 for i in range(number_of_jokers)]
     random.shuffle(damage_cards)
     return damage_cards
 
