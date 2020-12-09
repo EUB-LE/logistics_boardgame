@@ -210,10 +210,11 @@ class Game():
                     PlayerAction(self, self.active_player_id, ACTIONS[DO_NOTHING_ACTION_NAME]) 
                 finally:
                     player.actions_left -= 1
-            else:
-                vpa = get_valid_player_actions(self, player.id)
-                vpa[random.randint(0, len(vpa)-1)].run()
-                player.actions_left -= 1
+            # if no agent is set up, random actions can be chosen by uncommenting this section 
+            #else:
+            #    vpa = get_valid_player_actions(self, player.id)
+            #    vpa[random.randint(0, len(vpa)-1)].run()
+            #    player.actions_left -= 1
         # check win condition
             if self._get_node_by_id(self.end_node_id).freight >= self.target_freight:
                 raise GameWonException()
