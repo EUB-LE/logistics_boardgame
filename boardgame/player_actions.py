@@ -4,6 +4,7 @@ from typing import Any, Callable, TYPE_CHECKING
 if TYPE_CHECKING:
     from boardgame.classes import Game, Player
 import logging
+
 # logging configuration 
 try:
     logging.basicConfig(filename='game.log', encoding='utf-8', level=logging.DEBUG, filemode='w')
@@ -12,9 +13,25 @@ except ValueError:
     pass
 
 def do_player_action_nothing(game:Game, player_id:int) -> None:
+    """Spend an action point without doing anything (skip). 
+
+    Args:
+        game (Game): [description]
+        player_id (int): [description]
+    """
     pass
 
 def do_player_action_run(game:Game, player_id:int, destination_id:int) -> None:
+    """Move (run) to a neighboring node. 
+
+    Args:
+        game (Game): [description]
+        player_id (int): Id of the moving player.
+        destination_id (int): Id of the destination node. 
+
+    Raises:
+        InvalidActionException: If the action is not feasible with the given parameters. 
+    """
     player = game._get_player_by_id(player_id)
     player_current_node_id = player.location_id
     if destination_id not in game._get_node_by_id(player_current_node_id).neighbors:
@@ -22,6 +39,16 @@ def do_player_action_run(game:Game, player_id:int, destination_id:int) -> None:
     player.location_id = destination_id
     
 def do_player_action_fly(game:Game, player_id:int, destination_id:int) -> None:
+    """Fly to a orange node.
+
+    Args:
+        game (Game): [description]
+        player_id (int): [description]
+        destination_id (int): [description]
+
+    Raises:
+        InvalidActionException: If the action is not feasible with the given parameters. 
+    """
     player = game._get_player_by_id(player_id)
     player_current_node_id = player.location_id
     valid_destination_ids = [node.id for node in game.nodes if node.node_type in ['orange']]
@@ -33,6 +60,16 @@ def do_player_action_fly(game:Game, player_id:int, destination_id:int) -> None:
     player.funds -= 2
     
 def do_player_action_special_flight(game:Game, player_id:int, destination_id:int) -> None:
+    """Special fly to a purple node.
+
+    Args:
+        game (Game): [description]
+        player_id (int): [description]
+        destination_id (int): [description]
+
+    Raises:
+        InvalidActionException: If the action is not feasible with the given parameters.
+    """
     player = game._get_player_by_id(player_id)
     valid_destination_ids = [node.id for node in game.nodes if node.node_type in ['purple']]
     if destination_id not in valid_destination_ids:
@@ -40,6 +77,16 @@ def do_player_action_special_flight(game:Game, player_id:int, destination_id:int
     game.location_id = destination_id
 
 def do_player_action_share_resources(game:Game, player_id:int, target_player_id:int) -> None:
+    """Transfer 1 fund to a player that is at the same node. 
+
+    Args:
+        game (Game): [description]
+        player_id (int): [description]
+        target_player_id (int): [description]
+
+    Raises:
+        InvalidActionException: If the action is not feasible with the given parameters.
+    """
     player = game._get_player_by_id(player_id)
     target_player = game._get_player_by_id(target_player_id)
     if player.funds < 1: 
@@ -50,6 +97,15 @@ def do_player_action_share_resources(game:Game, player_id:int, target_player_id:
     target_player.funds += 1
     
 def do_player_action_repair(game:Game, player_id:int) -> None:
+    """Remove 1 damage point from the node the player is currently located. 
+
+    Args:
+        game (Game): [description]
+        player_id (int): [description]
+
+    Raises:
+        InvalidActionException: If the action is not feasible with the given parameters.
+    """
     player = player = game._get_player_by_id(player_id)
     node = game._get_node_by_id(player.location_id)
     if player.funds < 1: 
@@ -60,6 +116,15 @@ def do_player_action_repair(game:Game, player_id:int) -> None:
     node.damage -=1
     
 def do_player_action_generate_goods(game:Game, player_id:int) -> None:
+    """Generate 1 freight unit at the node the player is currently located at. 
+
+    Args:
+        game (Game): [description]
+        player_id (int): [description]
+
+    Raises:
+        InvalidActionException: If the action is not feasible with the given parameters.
+    """
     player = game._get_player_by_id(player_id)
     node = game._get_node_by_id(game.start_node_id)
     if player.funds < 2: 
@@ -70,6 +135,16 @@ def do_player_action_generate_goods(game:Game, player_id:int) -> None:
     node.freight += 1
     
 def do_player_action_transport_goods(game:Game, player_id:int, destination_id:int) -> None:
+    """Transport 1 freight unit from the current location to the destination location. 
+
+    Args:
+        game (Game): [description]
+        player_id (int): [description]
+        destination_id (int): [description]
+
+    Raises:
+        InvalidActionException: If the action is not feasible with the given parameters.
+    """
     player = game._get_player_by_id(player_id)
     node = game._get_node_by_id(player.location_id)
     target_node = game._get_node_by_id(destination_id)
@@ -82,12 +157,23 @@ def do_player_action_transport_goods(game:Game, player_id:int, destination_id:in
         raise InvalidActionException(player)
     if action_cost > player.actions_left: 
         raise InvalidActionException(player)
-    player.actions_left -= 1 # one action is always substracted
+    player.actions_left -= (action_cost - 1) # add one because every action automatically cost one action point
     node.freight -= 1
     target_node.freight += 1
     ACTIONS[RUN_ACTION_NAME](game, player_id, destination_id)
  
 def do_player_action_coordinate_drivers(game:Game, player_id:int, target_player_id:int, destination_id:int) -> None:
+    """Use an action point to move one of the driver players when it is not their turn. 
+
+    Args:
+        game (Game): [description]
+        player_id (int): [description]
+        target_player_id (int): [description]
+        destination_id (int): [description]
+
+    Raises:
+        InvalidActionException: If the action is not feasible with the given parameters.
+    """
     player = game._get_player_by_id(player_id)
     target_player = game._get_player_by_id(target_player_id)
     try:
@@ -96,6 +182,15 @@ def do_player_action_coordinate_drivers(game:Game, player_id:int, target_player_
         raise InvalidActionException(player)
 
 def get_valid_player_actions(game:Game, player_id:int) -> list[PlayerAction]:
+    """Returns all valid player actions for a given player at the current state of the game. This implementation is brittle and should not be used except for demonstration purpose. 
+
+    Args:
+        game (Game): [description]
+        player_id (int): [description]
+
+    Returns:
+        list[PlayerAction]: List of possible actions for the player. 
+    """
     valid_actions = [] 
     player = game._get_player_by_id(player_id)
     player_node = game._get_node_by_id(player.location_id)
@@ -192,13 +287,25 @@ ACTIONS ={
 }
 
 class PlayerAction():
+    """Represents a player action. 
+    """
     def __init__(self, game:Game, player_id:int, action:Callable, parameters:dict[str,Any]=None) -> None:
+        """Cosntructor of baordgame.player_actions.PlayerAction
+
+        Args:
+            game (Game): Reference to the game object. 
+            player_id (int): Id of the player this action belongs to. 
+            action (Callable): Method reference to the action. 
+            parameters (dict[str,Any], optional): Parameters of the action. Defaults to None.
+        """
         self.game = game
         self.player_id = player_id
         self.action = action
         self.parameters = parameters
 
     def run(self) -> None:
+        """Executes the player action with the given parameters and logs to log file. 
+        """
         self.action(self.game, self.player_id, **self.parameters) if self.parameters else self.action(self.game, self.player_id)
         player = self.game._get_player_by_id(self.player_id)
         logging.info(f"{player.name} {self.action.__name__} (parameters: {self.parameters})")
